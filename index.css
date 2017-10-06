@@ -1,0 +1,36 @@
+/*Dit is zodat de svg scrollbaar is en niet de body*/
+.container{
+  width: calc(100% - 200px);
+  margin:0 auto;
+  overflow-x:scroll;
+}
+
+.axis .domain {
+  display: none;
+}
+
+body{
+  overflow: hidden;
+}
+
+/*dit is voor de geweldige header animatie*/
+@keyframes textAnimation{
+  0% { font-size:20px; letter-spacing: 0 }
+  50% { font-size:23px; letter-spacing:5px }
+  100% { font-size:20px; letter-spacing: 0 }
+}
+
+h1{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 30px;
+  font-size: 20px;
+  color: Violet;
+  text-shadow: 2px 2px Turquoise;
+  text-align: center;
+  animation-name: textAnimation;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+}
+
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }
